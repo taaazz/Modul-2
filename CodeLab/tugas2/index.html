@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat Form Validasi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Roboto:ital,wght@0,400;1,100&display=swa"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form autocomplete="off">
+        <h4>Pendaftaran Akun</h4>
+
+        <div class="input-section">
+          <label>Nama Depan<span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Masukan Nama Depan"
+            id="first-name-input"
+            required
+          />
+          <span id="first-name-error" class="hide required-color error-message"
+            >Inputan tidak valid</span
+          >
+          <span id="empty-first-name" class="hide required-color error-message"
+            >Nama Depan Tidak boleh kosong</span
+          >
+        </div>
+
+        <div class="input-section">
+          <label>Nama Belakang<span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Masukan Nama Belakang"
+            id="last-name-input"
+            required
+          />
+          <span id="last-name-error" class="hide required-color error-message"
+            >Inputan tidak valid</span
+          >
+          <span id="empty-last-name" class="hide required-color error-message"
+            >Nama Belakang Tidak boleh kosong</span
+          >
+        </div>
+
+        <div class="input-section">
+          <label>Email<span class="required-color">*</span></label>
+          <input
+            type="email"
+            placeholder="Masukan Email"
+            id="email-input"
+            required
+          />
+          <span id="email-error" class="hide required-color error-message"
+            >Inputan tidak valid</span
+          >
+          <span id="empty-email" class="hide required-color error-message"
+            >Email Tidak boleh kosong</span
+          >
+        </div>
+
+        <button id="submit-button">Daftar</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
