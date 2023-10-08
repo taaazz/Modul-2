@@ -10,13 +10,26 @@ body {
   background: #3c87ff;
   overflow: hidden;
 }
+h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 5%;
+}
+h2 img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
 .wrapper {
-  max-width: 400px;
+  max-width: 600px;
   margin: 135px auto;
   background: white;
   border-radius: 7px;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
+
 .task-input {
   height: 52px;
   padding: 0 25px;
@@ -126,7 +139,7 @@ li {
   box-shadow: 0 0 6px rgb(0, 0, 0, 0.15);
 }
 
-.settings:hover .task-menu {
+.settings .task-menu.show {
   transform: scale(1);
 }
 
