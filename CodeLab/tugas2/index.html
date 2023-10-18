@@ -16,34 +16,18 @@
         <h4>Pendaftaran Akun</h4>
 
         <div class="input-section">
-          <label>Nama Depan<span class="required-color">*</span></label>
+          <label>Nama Lengkap<span class="required-color">*</span></label>
           <input
             type="text"
-            placeholder="Masukan Nama Depan"
-            id="first-name-input"
+            placeholder="Masukan Nama Lengkap"
+            id="full-name-input"
             required
           />
-          <span id="first-name-error" class="hide required-color error-message"
+          <span id="full-name-error" class="hide required-color error-message"
             >Inputan tidak valid</span
           >
-          <span id="empty-first-name" class="hide required-color error-message"
-            >Nama Depan Tidak boleh kosong</span
-          >
-        </div>
-
-        <div class="input-section">
-          <label>Nama Belakang<span class="required-color">*</span></label>
-          <input
-            type="text"
-            placeholder="Masukan Nama Belakang"
-            id="last-name-input"
-            required
-          />
-          <span id="last-name-error" class="hide required-color error-message"
-            >Inputan tidak valid</span
-          >
-          <span id="empty-last-name" class="hide required-color error-message"
-            >Nama Belakang Tidak boleh kosong</span
+          <span id="empty-full-name" class="hide required-color error-message"
+            >Nama Lengkap Tidak boleh kosong</span
           >
         </div>
 
@@ -60,6 +44,23 @@
           >
           <span id="empty-email" class="hide required-color error-message"
             >Email Tidak boleh kosong</span
+          >
+        </div>
+
+        <div class="input-section">
+          <label>Alamat<span class="required-color">*</span></label>
+          <textarea
+            id="address-input"
+            placeholder="Masukan Alamat"
+            cols="80"
+            rows="10"
+            required
+          ></textarea>
+          <span id="address-error" class="hide required-color error-message"
+            >Inputan tidak valid</span
+          >
+          <span id="empty-address" class="hide required-color error-message"
+            >Alamat tidak boleh kosong</span
           >
         </div>
 
